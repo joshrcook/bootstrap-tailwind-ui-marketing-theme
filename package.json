@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap-tailwind-ui-marketing-theme",
+  "version": "1.0.0",
+  "main": "dist/bootstrap-tailwind-ui-marketing-theme.css",
+  "repository": "https://github.com/joshrcook/bootstrap-tailwind-ui-marketing.git",
+  "author": "joshrcook <joshua.cook@snapav.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-prefixer": "^2.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/ui": "^0.1.3",
+    "tailwindcss": "^1.2.0"
+  },
+  "scripts": {
+    "start": "yarn clean && yarn export:dev && yarn preprocess -w",
+    "clean": "rm -rf ./dist/*",
+    "preprocess": "yarn postcss ./src/*.postcss --dir ./dist --ext .css --verbose",
+    "export:dev": "export NODE_ENV=development",
+    "export:prod": "export NODE_ENV=production",
+    "build:dev": "yarn clean && yarn export:dev && yarn preprocess",
+    "build:prod": "yarn clean && yarn export:prod && yarn preprocess"
+  }
+}

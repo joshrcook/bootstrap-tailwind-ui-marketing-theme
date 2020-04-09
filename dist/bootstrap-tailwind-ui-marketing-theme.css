@@ -1,0 +1,253 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bg-secondary:before, .bg-success:before, .bg-warning:before, .bg-info:before {
+    content: '(unstyled) ';
+  }
+
+.bg-primary {
+  color: #ffffff;
+}
+
+.bg-dark {
+  color: #ffffff;
+}
+
+.banner {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.banner a {
+    text-decoration: underline;
+  }
+
+.btn {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-lg {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .btn-lg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.display-1:before, .display-2:before, .display-3:before, h6:before, .h6:before {
+    content: '(unstyled) ';
+  }
+
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6b7280;
+}
+
+.display-4,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-weight: 800;
+  color: #161e2e;
+}
+
+.display-4 {
+  font-size: 2.25rem;
+  letter-spacing: -0.025em;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .display-4 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 4rem;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 640px) {
+  h1,
+    .h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1,
+    .h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 1.875rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  h2,
+    .h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  h3,
+    .h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h5,
+.h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #6b7280;
+}
+
+@media (min-width: 640px) {
+  h5,
+    .h5 {
+    font-size: 1rem;
+  }
+}
+
+.lead {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  .lead {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .lead {
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+.section-default *,
+    .section-default .lead,
+    .section-default h5,
+    .section-default .h5 {
+    color: #6b7280;
+  }
+
+.section-default .display-4,
+    .section-default h1,
+    .section-default .h1,
+    .section-default h2,
+    .section-default .h2,
+    .section-default h3,
+    .section-default .h3,
+    .section-default h4,
+    .section-default .h4,
+    .section-default .title {
+    color: #161e2e;
+  }
+
+.section-primary *,
+    .section-primary .lead,
+    .section-primary h5,
+    .section-primary .h5 {
+    color: #ffffff;
+  }
+
+.section-primary .display-4,
+    .section-primary h1,
+    .section-primary .h1,
+    .section-primary h2,
+    .section-primary .h2,
+    .section-primary h3,
+    .section-primary .h3,
+    .section-primary h4,
+    .section-primary .h4,
+    .section-primary .title {
+    color: #ffffff;
+  }
+
+.section-secondary *,
+    .section-secondary .lead,
+    .section-secondary h5,
+    .section-secondary .h5 {
+    color: #d2d6dc;
+  }
+
+.section-secondary .display-4,
+    .section-secondary h1,
+    .section-secondary .h1,
+    .section-secondary h2,
+    .section-secondary .h2,
+    .section-secondary h3,
+    .section-secondary .h3,
+    .section-secondary h4,
+    .section-secondary .h4,
+    .section-secondary .title {
+    color: #ffffff;
+  }
