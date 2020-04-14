@@ -2,7 +2,7 @@
   "name": "bootstrap-tailwind-ui-marketing-theme",
   "version": "1.0.0",
   "main": "dist/bootstrap-tailwind-ui-marketing-theme.css",
-  "repository": "https://github.com/joshrcook/bootstrap-tailwind-ui-marketing.git",
+  "repository": "https://github.com/joshrcook/bootstrap-tailwind-ui-marketing-theme.git",
   "author": "joshrcook <joshua.cook@snapav.com>",
   "license": "MIT",
   "devDependencies": {
