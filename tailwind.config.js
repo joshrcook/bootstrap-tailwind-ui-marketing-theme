@@ -3,6 +3,17 @@ const tuiColors = require('@tailwindcss/ui/colors');
 
 module.exports = {
   theme: {
+    fontSize: {
+      sm: '1rem',
+      base: '1.125rem',
+      lg: '1.625rem', // h2
+      xl: '2.5rem', // h1
+    },
+    lineHeight: {
+      tight: '1.15',
+      normal: '1.5',
+      loose: '1.65',
+    },
     extend: {
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],

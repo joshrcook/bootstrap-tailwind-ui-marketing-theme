@@ -1,16 +1,153 @@
 .btn {
+    @apply text-base;
+    @apply inline-flex;
+    @apply justify-center;
     @apply py-3;
-    @apply px-5;
+    @apply px-6;
+    @apply border;
+    @apply leading-normal;
+    @apply font-medium;
+    @apply rounded-md;
+    @apply text-white;
+    @apply transition;
+    @apply duration-150;
+    @apply ease-in-out;
+    @apply border-transparent;
+
+    &:hover,
+    &.hover {
+        @apply border-transparent;
+    }
+
+    &:focus,
+    &.focus {
+        @apply outline-none;
+        @apply shadow-outline;
+    }
+}
+
+/* Variants */
+.btn-primary {
+    @apply bg-indigo-600;
+    @apply text-white;
+    @apply border-transparent;
+
+    &:hover,
+    &.hover {
+        @apply bg-indigo-500;
+    }
+
+    &:not(:disabled):not(.disabled) {
+        &:active,
+        &.active {
+            @apply bg-indigo-700;
+            @apply border-transparent;
+        }
+    }
+
+    &:focus,
+    &.focus {
+        @apply bg-indigo-700;
+        @apply border-indigo-700;
+        @apply shadow-outline-indigo;    
+    }
+
+    &:disabled,
+    &.disabled {
+        @apply bg-indigo-600;
+        @apply text-white;
+        @apply border-transparent;
+    }
+}
+
+.btn-secondary {
+    @apply text-indigo-700;
+    @apply bg-indigo-100;
+
+    &:hover,
+    &.hover {
+        @apply text-indigo-600;
+        @apply bg-indigo-50;
+    }
+
+    &:not(:disabled):not(.disabled) {
+        &:active,
+        &.active {
+            @apply bg-indigo-100;
+            @apply border-transparent;
+            @apply text-indigo-700;
+        }
+    }
+
+    &:focus,
+    &.focus {
+        @apply bg-indigo-100;
+        @apply border-transparent;
+        @apply shadow-outline-indigo; 
+        @apply text-indigo-700;   
+    }
+
+    &:disabled,
+    &.disabled {
+        @apply text-indigo-700;
+        @apply bg-indigo-100;
+        @apply border-transparent;
+    }
+}
+
+.btn-light {
+    @apply text-gray-900;
+    @apply bg-white;
+
+    &:hover,
+    &.hover {
+        @apply bg-white;
+        @apply text-gray-700;
+    }
+
+    &:not(:disabled):not(.disabled) {
+        &:active,
+        &.active {
+            @apply border-transparent;
+            @apply text-gray-900;
+            @apply bg-gray-100;
+        }
+    }
+
+    &:focus,
+    &.focus {
+        @apply border-transparent;
+        @apply text-gray-900;
+        @apply bg-gray-100;
+        @apply shadow-outline-gray;
+    }
+}
+
+.btn-dark {
+    @apply bg-gray-900;
+    @apply text-white;
+    
+    &:hover,
+    &.hover {
+        @apply bg-gray-800;
+    }
+
+    &:focus,
+    &.focus {
+        @apply shadow-outline;    
+    }
 }
 
 .btn-sm {
     @apply py-2;
     @apply px-4;
+    @apply text-sm;
 }
 
 .btn-lg {
     @apply py-3;
     @apply px-8;
+    @apply text-lg;
 }
 
 @screen md {
