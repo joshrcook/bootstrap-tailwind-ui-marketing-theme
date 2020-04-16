@@ -223,3 +223,36 @@ h2,
   line-height: 1.15;
   letter-spacing: -0.025em;
 }
+
+blockquote,
+.blockquote {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 4px;
+  border-color: #5850ec;
+}
+
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+.navbar-light .navbar-nav .nav-link {
+      color: #6b7280;
+    }
+
+.navbar-light .navbar-nav .nav-link:hover {
+        color: #161e2e;
+      }
+
+.row {
+  width: 100%;
+}
